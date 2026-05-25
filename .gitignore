@@ -36,3 +36,11 @@ x86/
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# CLion / CMake
+cmake-build-*/
+.idea/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
