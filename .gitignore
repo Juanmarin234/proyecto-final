@@ -1,0 +1,38 @@
+# Ejecutables
+*.exe
+*.out
+*.app
+ecomision
+ecomision.exe
+
+# Archivos objeto y de compilación
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+
+# Carpetas de build
+build/
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# Archivos de IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+.vs/
+*.cbp
+*.layout
+*.depend
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
