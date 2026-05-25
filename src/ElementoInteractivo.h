@@ -22,7 +22,7 @@ public:
 
     // Permite desactivar el elemento despues de usarse una vez
     void desactivar();
-.
+
     virtual void interactuar(Explorador* explorador) = 0;
 
     virtual void describir() const;

@@ -15,21 +15,19 @@ endif()
 # Lista de archivos fuente del proyecto.
 # A medida que agregues nuevas clases, añade aqui sus .cpp.
 set(SOURCES
-    src/ElementoInteractivo.cpp
-    src/Explorador.cpp
-    src/Zona.cpp
-    src/Reserva.cpp
-    src/EstacionEnergia.cpp
-    src/EstacionEnergia.cpp
-    src/ResiduoContaminante.cpp
-    src/PortalDeRuta.cpp
-    src/EcoMision.cpp
-    src/main.cpp
+        src/ElementoInteractivo.cpp
+        src/Explorador.cpp
+        src/Zona.cpp
+        src/Reserva.cpp
+        src/EstacionEnergia.cpp
+        src/ResiduoContaminante.cpp
+        src/PortalDeRuta.cpp
+        src/EcoMision.cpp
+        src/main.cpp
 )
 
-# Crea el ejecutable. Cuando agreguemos main.cpp en el paso final,
-# lo añadiremos aqui tambien.
-add_library(ecomision STATIC ${SOURCES})
+# Genera el EJECUTABLE (no una libreria) con los archivos fuente.
+add_executable(ecomision ${SOURCES})
 
 # Indica donde estan los headers para que #include "X.h" funcione.
 target_include_directories(ecomision PRIVATE src)

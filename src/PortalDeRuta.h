@@ -10,8 +10,9 @@ class PortalDeRuta : public ElementoInteractivo {
 private:
     std::string codigoDestino;  
     Reserva* reserva;           
-    int costoEnergia;          
-     
+    int costoEnergia;
+
+public:
     PortalDeRuta(const std::string& nombre,
                  const std::string& codigoDestino,
                  Reserva* reserva,
