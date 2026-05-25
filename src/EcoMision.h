@@ -21,6 +21,8 @@ private:
     void mostrarEstadoActual() const;
     void ejecutarDemostracion();
 
+    void modoInteractivo();
+    void mostrarMenu() const;
 public:
     EcoMision();
     ~EcoMision();
