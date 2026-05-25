@@ -24,6 +24,7 @@ set(SOURCES
     src/ResiduoContaminante.cpp
     src/PortalDeRuta.cpp
     src/EcoMision.cpp
+    src/main.cpp
 )
 
 # Crea el ejecutable. Cuando agreguemos main.cpp en el paso final,
