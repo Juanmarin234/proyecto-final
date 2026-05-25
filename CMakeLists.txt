@@ -21,6 +21,7 @@ set(SOURCES
     src/Reserva.cpp
     src/EstacionEnergia.cpp
     src/EstacionEnergia.cpp
+    src/ResiduoContaminante.cpp
 )
 
 # Crea el ejecutable. Cuando agreguemos main.cpp en el paso final,
