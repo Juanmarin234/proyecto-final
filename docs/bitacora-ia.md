@@ -1,6 +1,6 @@
 # Bitácora de uso de IA generativa
 
-Aquí contamos cómo usamos la IA durante el desarrollo del proyecto EcoMisión, qué cosas nos sirvieron, qué cosas no, y qué tuvo que entender bien cada integrante para poder defenderlo.
+Aquí contamos cómo usamos la IA durante el desarrollo del proyecto EcoShaper, qué cosas nos sirvieron, qué cosas no, y qué tuvo que entender bien cada integrante para poder defenderlo.
 
 ---
 
@@ -83,7 +83,7 @@ Se encargó principalmente de:
 
 - La clase `Reserva` con el `unordered_map`.
 - La clase `Zona` con la sobrecarga del método `interactuar`.
-- La clase `EcoMision` que coordina todo.
+- La clase `EcoShaper` que coordina todo.
 
 Tiene que poder explicar:
 

@@ -1,8 +1,8 @@
-#include "EcoMision.h"
+#include "EcoShaper.h"
 
 
 int main() {
-    EcoMision mision;
+    EcoShaper mision;
     mision.ejecutar();
     return 0;
 }

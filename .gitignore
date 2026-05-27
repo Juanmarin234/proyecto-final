@@ -2,8 +2,8 @@
 *.exe
 *.out
 *.app
-ecomision
-ecomision.exe
+ecoshaper
+ecoshaper.exe
 
 # Archivos objeto y de compilación
 *.o

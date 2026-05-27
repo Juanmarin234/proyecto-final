@@ -1,8 +1,8 @@
-# EcoMisión
+# EcoShaper
 
 ## Descripción
 
-EcoMisión es un prototipo de experiencia interactiva sobre cuidado ambiental, desarrollado como proyecto final de Programación Orientada a Objetos. Una persona exploradora recorre una reserva natural compuesta por varias zonas, interactuando con elementos del entorno que afectan su energía y puntaje ambiental.
+EcoShaper es un prototipo de experiencia interactiva sobre cuidado ambiental, desarrollado como proyecto final de Programación Orientada a Objetos. Una persona exploradora recorre una reserva natural compuesta por varias zonas, interactuando con elementos del entorno que afectan su energía y puntaje ambiental.
 
 ## Integrantes
 

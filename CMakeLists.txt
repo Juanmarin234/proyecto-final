@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(ecomision)
+project(ecoshaper)
 
 # Usamos C++17 (moderno y estable, soporta nullptr, auto, range-based for, etc.)
 set(CMAKE_CXX_STANDARD 17)
@@ -22,12 +22,12 @@ set(SOURCES
         src/EstacionEnergia.cpp
         src/ResiduoContaminante.cpp
         src/PortalDeRuta.cpp
-        src/EcoMision.cpp
+        src/EcoShaper.cpp
         src/main.cpp
 )
 
 # Genera el EJECUTABLE (no una libreria) con los archivos fuente.
-add_executable(ecomision ${SOURCES})
+add_executable(ecoshaper ${SOURCES})
 
 # Indica donde estan los headers para que #include "X.h" funcione.
-target_include_directories(ecomision PRIVATE src)
+target_include_directories(ecoshaper PRIVATE src)

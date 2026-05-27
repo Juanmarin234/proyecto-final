@@ -1,4 +1,4 @@
-#include "EcoMision.h"
+#include "EcoShaper.h"
 #include "Reserva.h"
 #include "Zona.h"
 #include "Explorador.h"
@@ -7,20 +7,20 @@
 #include "PortalDeRuta.h"
 #include <iostream>
 #include <limits>
-EcoMision::EcoMision() : reserva(nullptr), explorador(nullptr) {
+EcoShaper::EcoShaper() : reserva(nullptr), explorador(nullptr) {
 
 }
 
-EcoMision::~EcoMision() {
+EcoShaper::~EcoShaper() {
 
     delete explorador;
     delete reserva;
 
 }
 
-void EcoMision::prepararReserva() {
+void EcoShaper::prepararReserva() {
     std::cout << "\n========================================\n";
-    std::cout << "  Preparando la reserva natural EcoMision\n";
+    std::cout << "  Preparando la reserva natural EcoShaper\n";
     std::cout << "========================================\n";
 
     reserva = new Reserva();
@@ -94,7 +94,7 @@ void EcoMision::prepararReserva() {
     // Mostramos las zonas registradas para confirmar el estado inicial.
     reserva->mostrarZonas();
 }
-void EcoMision::crearExplorador(const std::string& nombre) {
+void EcoShaper::crearExplorador(const std::string& nombre) {
     std::cout << "\n----------------------------------------\n";
     std::cout << "  Creando explorador: " << nombre << "\n";
     std::cout << "----------------------------------------\n";
@@ -103,7 +103,7 @@ void EcoMision::crearExplorador(const std::string& nombre) {
     explorador = new Explorador(nombre, 80);
 }
 
-void EcoMision::ubicarExploradorEn(const std::string& codigoZona) {
+void EcoShaper::ubicarExploradorEn(const std::string& codigoZona) {
     if (explorador == nullptr) {
         std::cout << "  [Error] No hay explorador creado para ubicar.\n";
         return;
@@ -119,7 +119,7 @@ void EcoMision::ubicarExploradorEn(const std::string& codigoZona) {
     explorador->cambiarZona(zonaInicial);
 }
 
-void EcoMision::mostrarEstadoActual() const {
+void EcoShaper::mostrarEstadoActual() const {
     if (explorador == nullptr) {
         std::cout << "  [Aviso] Aun no hay explorador.\n";
         return;
@@ -134,7 +134,7 @@ void EcoMision::mostrarEstadoActual() const {
     }
 }
 
-void EcoMision::ejecutarDemostracion() {
+void EcoShaper::ejecutarDemostracion() {
     std::cout << "\n========================================\n";
     std::cout << "  Iniciando demostracion de interacciones\n";
     std::cout << "========================================\n";
@@ -168,7 +168,7 @@ void EcoMision::ejecutarDemostracion() {
     mostrarEstadoActual();
 }
 
-void EcoMision::ejecutar() {
+void EcoShaper::ejecutar() {
     // 1. Preparacion y demostracion automatica (lo que ya tenias).
     prepararReserva();
     crearExplorador("Ana");
@@ -187,11 +187,11 @@ void EcoMision::ejecutar() {
     if (opcion == 's' || opcion == 'S') {
         modoInteractivo();
     } else {
-        std::cout << "\nFinalizando EcoMision. Hasta pronto!\n";
+        std::cout << "\nFinalizando EcoShaper. Hasta pronto!\n";
     }
 }
 
-void EcoMision::mostrarMenu() const {
+void EcoShaper::mostrarMenu() const {
     std::cout << "\n----------------------------------------\n";
     std::cout << "  MENU INTERACTIVO\n";
     std::cout << "----------------------------------------\n";
@@ -205,7 +205,7 @@ void EcoMision::mostrarMenu() const {
     std::cout << "Opcion: ";
 }
 
-void EcoMision::modoInteractivo() {
+void EcoShaper::modoInteractivo() {
     std::cout << "\n========================================\n";
     std::cout << "  Bienvenido al modo interactivo\n";
     std::cout << "  Explorador: " << explorador->getNombre() << "\n";
@@ -304,5 +304,5 @@ void EcoMision::modoInteractivo() {
     std::cout << "  Estado final tras modo interactivo\n";
     std::cout << "========================================\n";
     explorador->mostrarEstado();
-    std::cout << "\nGracias por jugar EcoMision!\n";
+    std::cout << "\nGracias por jugar EcoShaper!\n";
 }

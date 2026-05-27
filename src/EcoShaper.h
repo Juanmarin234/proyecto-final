@@ -6,11 +6,11 @@
 class Reserva;
 class Explorador;
 
-// EcoMision: clase principal del sistema. Coordina toda la experiencia.
+// EcoShaper: clase principal del sistema. Coordina toda la experiencia.
 // Es dueña (composicion) de la reserva y el explorador: los crea en
 // su constructor (o en metodos auxiliares) y los destruye en su destructor.
 
-class EcoMision {
+class EcoShaper {
 private:
     Reserva* reserva;
     Explorador* explorador;
@@ -24,8 +24,8 @@ private:
     void modoInteractivo();
     void mostrarMenu() const;
 public:
-    EcoMision();
-    ~EcoMision();
+    EcoShaper();
+    ~EcoShaper();
 
     // Punto de entrada
     void ejecutar();
